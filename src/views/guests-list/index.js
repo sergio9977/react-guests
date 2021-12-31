@@ -13,7 +13,7 @@ const theme = createTheme();
 
 function SignInSide() {
   // const [users, setUsers] = useState([]);
-  const [users ]= useUsers();
+  const [users, createUser ]= useUsers();
 
   return (
     <ThemeProvider theme={theme}>
@@ -34,7 +34,7 @@ function SignInSide() {
           }}
         >
           <div className="menu-drawer">
-            <SwipeableTemporaryDrawer />
+            <SwipeableTemporaryDrawer createUser={createUser} />
           </div>
           <BasicTable items={users}/>
         </Grid>
@@ -46,7 +46,7 @@ function SignInSide() {
           component={Paper}
           elevation={6}
         >
-          <SignInSection/>
+          <SignInSection createUser={createUser} />
         </Grid>
       </Grid>
     </ThemeProvider>

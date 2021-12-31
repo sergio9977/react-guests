@@ -7,7 +7,7 @@ import SignInSection from '../register'
 
 import './styles.css';
 
-export default function SwipeableTemporaryDrawer() {
+export default function SwipeableTemporaryDrawer({ createUser }) {
   const [state, setState] = useState({
     right: false,
   });
@@ -31,7 +31,7 @@ export default function SwipeableTemporaryDrawer() {
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
     >
-      <SignInSection />
+      <SignInSection createUser={createUser} />
     </Box>
   );
 

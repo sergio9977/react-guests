@@ -3,10 +3,8 @@ import Button from '@mui/material/Button';
 import Box from '@mui/material/Box';
 import GoogleIcon from '@mui/icons-material/Google';
 import Typography from '@mui/material/Typography';
-import { useUsers } from '../../service';
 
-function SignInSection() {
-  const [, createUser ]= useUsers();
+function SignInSection({ createUser }) {
 
   return (
     <Box
