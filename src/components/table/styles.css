@@ -1,0 +1,19 @@
+.table-basic {
+  background-color: rgb(255 255 255 / 80%) !important;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+}
+
+.user .user-photo {
+  border-radius: 50px;
+  height: 36px;
+  margin-right: 8px;
+}
+
+.user .user-name {
+  display: flex;
+  align-items: center;
+}

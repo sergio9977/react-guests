@@ -1,0 +1,13 @@
+.menu-drawer {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .assist-section {
+    display:none;
+  }
+
+  .menu-drawer {
+    display: block;
+  }
+}
